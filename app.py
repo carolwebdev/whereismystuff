@@ -203,46 +203,46 @@ def main():
 
         # ... (seu código existente para carregar o arquivo Excel, etc.) ...
 
-        # HTML para botão de gravação e script da Web Speech API
-        st.components.v1.html(
-            """
-            <script>
-            const recognition = new webkitSpeechRecognition() || new SpeechRecognition(); // Para compatibilidade com Chrome e outros navegadores
-            recognition.lang = 'pt-BR'; // Defina o idioma
-            recognition.interimResults = false; // Apenas resultados finais
-            const recordButton = document.getElementById('recordButton');
-            const recognizedText = document.getElementById('recognizedText');
+        # # HTML para botão de gravação e script da Web Speech API
+        # st.components.v1.html(
+        #     """
+        #     <script>
+        #     const recognition = new webkitSpeechRecognition() || new SpeechRecognition(); // Para compatibilidade com Chrome e outros navegadores
+        #     recognition.lang = 'pt-BR'; // Defina o idioma
+        #     recognition.interimResults = false; // Apenas resultados finais
+        #     const recordButton = document.getElementById('recordButton');
+        #     const recognizedText = document.getElementById('recognizedText');
 
-            recordButton.addEventListener('click', () => {
-                recognition.start();
-                recordButton.disabled = true; // Desativa o botão durante a gravação
-                recognizedText.textContent = 'Ouvindo...';
-            });
+        #     recordButton.addEventListener('click', () => {
+        #         recognition.start();
+        #         recordButton.disabled = true; // Desativa o botão durante a gravação
+        #         recognizedText.textContent = 'Ouvindo...';
+        #     });
 
-            recognition.onresult = (event) => {
-                const speechResult = event.results[0][0].transcript;
-                recognizedText.textContent = speechResult;
-                Streamlit.set({ 'final_transcript': speechResult }); // Envia para o Streamlit
-                recognition.stop();
-                recordButton.disabled = false; // Reativa o botão
-            };
+        #     recognition.onresult = (event) => {
+        #         const speechResult = event.results[0][0].transcript;
+        #         recognizedText.textContent = speechResult;
+        #         Streamlit.set({ 'final_transcript': speechResult }); // Envia para o Streamlit
+        #         recognition.stop();
+        #         recordButton.disabled = false; // Reativa o botão
+        #     };
 
-            recognition.onerror = (event) => {
-                recognizedText.textContent = 'Erro ao reconhecer a fala.';
-                recognition.stop();
-                recordButton.disabled = false;
-            };
+        #     recognition.onerror = (event) => {
+        #         recognizedText.textContent = 'Erro ao reconhecer a fala.';
+        #         recognition.stop();
+        #         recordButton.disabled = false;
+        #     };
 
-            recognition.onend = () => {
-                recordButton.disabled = false;
-            };
-            </script>
-            <div>
-                <button id="recordButton">Iniciar Gravação</button>
-                <p id="recognizedText"></p>
-            </div>
-            """
-        )
+        #     recognition.onend = () => {
+        #         recordButton.disabled = false;
+        #     };
+        #     </script>
+        #     <div>
+        #         <button id="recordButton">Iniciar Gravação</button>
+        #         <p id="recognizedText"></p>
+        #     </div>
+        #     """
+        # )
 
         final_transcript = st.text_area("Texto Reconhecido", key="final_transcript", value="")
 
