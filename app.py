@@ -3,7 +3,6 @@ import pandas as pd
 import re
 import os
 from io import BytesIO
-import pyttsx3
 import tempfile
 from gtts import gTTS
 
