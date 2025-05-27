@@ -256,13 +256,13 @@ Se este projeto te ajudou, considere dar uma ⭐ no repositório!
 
 <div align="center">
 
-![GitHub stars](https://img.shields.io/github/stars/seuusuario/whereismystuff?style=social)
-![GitHub forks](https://img.shields.io/github/forks/seuusuario/whereismystuff?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/seuusuario/whereismystuff?style=social)
+![GitHub stars](https://img.shields.io/github/stars/carolwebdev/whereismystuff?style=social)
+![GitHub forks](https://img.shields.io/github/forks/carolwebdev/whereismystuff?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/carolwebdev/whereismystuff?style=social)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/seuusuario/whereismystuff)
-![GitHub issues](https://img.shields.io/github/issues/seuusuario/whereismystuff)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/seuusuario/whereismystuff)
+![GitHub last commit](https://img.shields.io/github/last-commit/carolwebdev/whereismystuff)
+![GitHub issues](https://img.shields.io/github/issues/carolwebdev/whereismystuff)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/carolwebdev/whereismystuff)
 
 </div>
 
