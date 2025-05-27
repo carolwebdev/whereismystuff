@@ -1,8 +1,5 @@
 # 🔍 WhereIsMyStuff
 
-
-## pt-BR
-
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -88,7 +85,8 @@ Crie um arquivo Excel (`.xlsx`) seguindo este formato:
 ```
 
 > 💡 **Dica:** A primeira linha contém os **locais** e as linhas abaixo contêm os **itens** daquele local.
-> > 💡 **Dica:** Você pode criar a planilha pelo Google Sheets e depois exportá-la no formato `.xlsx`.
+
+> 💡 **Dica:** Você pode criar a planilha pelo Google Sheets e depois exportá-la no formato `.xlsx`.
 
 ### **Passo 2:** Faça o upload
 1. Acesse [whereismystuff.streamlit.app](https://whereismystuff.streamlit.app/)
@@ -113,13 +111,8 @@ Crie um arquivo Excel (`.xlsx`) seguindo este formato:
 ![image](https://github.com/user-attachments/assets/2357894e-5cd8-43da-80ea-3eee974d5edf)
 
 ### 🎯 **Resultado da Busca**
-```
-🔍 Buscando por: "chave"
+![image](https://github.com/user-attachments/assets/9c9029cb-8fea-4088-a943-258860059507)
 
-✅ Item encontrado!
-📍 Local: Garagem
-📦 Item: Chave de fenda
-```
 
 </div>
 
